@@ -1,7 +1,5 @@
 //import logo from './logo.svg';
-import { blue } from '@mui/material/colors';
 import './App.css';
-import { Container, Typography } from "@mui/material";
 
 /*function App() {
   return (
@@ -39,7 +37,8 @@ export default function MyApp() {
 }
   */
 function App() {
-  return <Container sx={{ bgcolor: "blue", height: "100vh" }}>
-    <Typography variant='h1'>Hello World!</Typography></Container>
+  return <div className="background">
+    <h1>Welcome to my app</h1>
+  </div>
 }
 export default App;

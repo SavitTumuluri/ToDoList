@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+.background{
+  background: linear-gradient(180deg, #12122e 50%, #272764 50%);
+  line-height: 38x;
+  font-weight: 600;
+  font-size: 1.125rem;
+  width: 100%;
+  height: 100vh;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +50,4 @@
     transform: rotate(360deg);
   }
 }
+
