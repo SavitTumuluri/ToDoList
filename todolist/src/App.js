@@ -1,44 +1,50 @@
-//import logo from './logo.svg';
 import './App.css';
+import Box from '@mui/material/Box';
 
-/*function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-*/
-/*function MyButton() {
-  return (
-    <button>I'm a button</button>
-  );
-}
-export default function MyApp() {
-  return (
-    <div> 
-      <h1>Welcome to my app</h1>
-      <MyButton />
-    </div>
-  )
-}
-  */
+
 function App() {
   return <div className="background">
-    <h1>Welcome to my app</h1>
+    <div style={{
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    }}>
+    <Box
+      component="div"
+      sx={{
+        display: 'inline',
+        p: 1,
+        m: 1,
+        bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : '#fff'),
+        color: (theme) =>
+          theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800',
+        border: '1px solid',
+          borderColor: (theme) =>
+            theme.palette.mode === 'dark' ? 'grey.800' : 'grey.300',
+          borderRadius: 2,
+          fontSize: '0.875rem',
+          fontWeight: '700',
+      }}> Home
+    </Box>
+    <Box
+        component="div"
+        sx={{
+          display: 'inline',
+          p: 1,
+          m: 1,
+          bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : '#fff'),
+          color: (theme) =>
+            theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800',
+          border: '1px solid',
+          borderColor: (theme) =>
+            theme.palette.mode === 'dark' ? 'grey.800' : 'grey.300',
+          borderRadius: 2,
+          fontSize: '0.875rem',
+          fontWeight: '700',
+        }}
+      >
+      Edit List</Box>
+  </div>
   </div>
 }
 export default App;
