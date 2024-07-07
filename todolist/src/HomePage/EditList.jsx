@@ -2,6 +2,7 @@ import Box from '@mui/material/Button';
 import Button from '@mui/material/Box';
 import * as React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { TodoWrapper } from './components/TodoWrapper';
 
 
 const EditList = () => {
@@ -33,9 +34,9 @@ const EditList = () => {
           fontSize: '0.875rem',
           fontWeight: '700',
       }}> <Button onClick={handleClick}>Home</Button></Box>
-  </div>
-  </div>
 
-  
+    <TodoWrapper />
+  </div>
+  </div>
 }
 export default EditList;
