@@ -34,7 +34,8 @@ const EditList = () => {
           fontSize: '0.875rem',
           fontWeight: '700',
       }}> <Button onClick={handleClick}>Home</Button></Box>
-
+  </div>
+  <div className='App'>
     <TodoWrapper />
   </div>
   </div>
