@@ -1,9 +1,16 @@
 import Box from '@mui/material/Button';
 import Button from '@mui/material/Box';
 import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 const EditList = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/');
+  };
+
   return <div className="background">
     <div style={{
     display: 'flex',
@@ -25,8 +32,7 @@ const EditList = () => {
           borderRadius: 2,
           fontSize: '0.875rem',
           fontWeight: '700',
-      }}> <Button>Home</Button>
-    </Box>
+      }}> <Button onClick={handleClick}>Home</Button></Box>
   </div>
   </div>
 }

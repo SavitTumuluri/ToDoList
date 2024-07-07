@@ -1,5 +1,6 @@
 import './App.css'
-import Home from './Homepage/Home';
+import Home from './HomePage/Home';
+import EditList from './HomePage/EditList';
 import { Routes, Route } from 'react-router-dom';
 
 
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/editlist" element={<EditList />}/>
       </Routes>
     </div>
       
